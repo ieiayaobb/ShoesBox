@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.shoesbox.entity">
+    <class name="com.shoesbox.entity.TotalAmount" table="shoes_total_amount">
+        <id name="amountId" column="AMOUNT_ID" type="java.lang.Integer">
+            <generator class="identity"></generator>
+        </id>
+        <property name="sellGoodsName">
+            <column name="SELL_GOODS_NAME" sql-type="varchar" />
+        </property>
+        <property name="sellGoodsPrice">
+            <column name="SELL_GOODS_PRICE" sql-type="varchar" />
+        </property>
+        <property name="totalPrices">
+            <column name="TOTAL_PRICES" sql-type="varchar" />
+        </property>
+    </class>
+</hibernate-mapping>
